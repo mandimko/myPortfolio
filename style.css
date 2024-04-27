@@ -5,12 +5,14 @@
 }
 
 body {
-  margin-top: 100px;
+  margin: 60px auto;
+  max-width: 800px;
 }
 
 h1,
 h2,
 h3 {
+  text-align: center;
   margin: 0;
 }
 
@@ -30,6 +32,8 @@ h3 {
 p {
   font-size: 18px;
   line-height: 1.5;
+  text-align: center;
+  border-radius: 4px;
 }
 
 .navigation-links {
@@ -40,9 +44,14 @@ p {
 
 .navigation-links a {
   margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-transform: capitalize;
+  text-decoration: none;
 }
 
 .primary-link {
+  text-align: center;
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;
@@ -53,6 +62,7 @@ p {
 }
 
 .secondary-link {
+  text-align: center;
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;
@@ -69,6 +79,7 @@ p {
 
 .about-paragraphs {
   margin: 30px 0;
+  display: flex;
 }
 
 .about-paragraphs p {
@@ -85,4 +96,39 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.5;
+
+    img {
+      display: none;
+    }
+  }
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+    margin: 0;
+  }
+  h1 {
+    font-size: 85px;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  h3 {
+    opacity: 0.7;
+    font-size: 25px;
+  }
+  p {
+    padding: 20px;
+    font-size: 19px;
+    text-align: center;
+    line-height: 1.5;
+    border-radius: 4px;
+  }
 }
