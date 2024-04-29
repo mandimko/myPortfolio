@@ -108,27 +108,24 @@ p {
       display: none;
     }
   }
-  h1,
-  h2,
-  h3 {
-    text-align: center;
-    margin: 0;
-  }
-  h1 {
-    font-size: 85px;
-  }
-  h2 {
-    font-size: 48px;
-  }
-  h3 {
-    opacity: 0.7;
-    font-size: 25px;
-  }
-  p {
-    padding: 20px;
-    font-size: 19px;
-    text-align: center;
-    line-height: 1.5;
-    border-radius: 4px;
+
+  @media (min-width: 900px) {
+    h1 {
+      font-size: 85px;
+    }
+    h2 {
+      font-size: 48px;
+    }
+    h3 {
+      opacity: 0.7;
+      font-size: 25px;
+    }
+    p {
+      padding: 20px;
+      font-size: 19px;
+      text-align: center;
+      line-height: 1.5;
+      border-radius: 4px;
+    }
   }
 }
